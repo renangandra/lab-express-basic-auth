@@ -11,6 +11,27 @@
 
   <body>
 
+    <nav><!--é um elemento semântico usado para representar uma seção de navegação. Ele geralmente contém links ou outros elementos de navegação.-->
+      <ul><!--agrupar itens de lista -->
+        <li id="to-left">
+          <p><a href="/"> Users - practice </a></p>
+        </li>
+        <li id="to-right">
+          <a href="/signup">Sign up</a>
+          <span> | </span>
+          <a href="/login">Login</a>
+          <span> | </span>
+          <a href="/main">Main </a>
+          <span> | </span>
+          <a href="/private">Private </a>
+          <span> | </span>
+          <form id="logout-form" action="/logout" method="POST">
+            <button>Logout</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
     {{{body}}}
 
     <script src="/js/script.js"></script>
